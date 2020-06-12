@@ -395,7 +395,6 @@ html, body{
 .portImageWrapper
 {
     width: 100%;
-    border: solid 1px black;
     height: 200px;
     text-align: center;
 }
