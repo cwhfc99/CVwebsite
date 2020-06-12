@@ -1,0 +1,622 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: rgba(29,50,81,1);
+    background: rgba(207,230,215,1);
+}
+
+::selection {
+    color: rgba(29,50,81,1);
+    background: rgba(207,230,215,1);
+}
+
+@media (max-width: 1228px)
+{
+    .navHolder
+    {
+        display: none;
+    }
+
+}
+
+@media (pointer: coarse) {
+    .portArrow{display: none;}
+}
+
+#smallScreen
+{
+    display: none;
+    width: 100%;
+    z-index: 1;
+    padding: 10px 0;
+    text-align: center;
+    background-color: rgba(29,50,81,1);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#smallScreenButt
+{
+    box-sizing: border-box;
+    color: rgba(29,50,81,1);;
+    background-color: rgba(207,230,215,1);
+    margin: 5px auto;
+    width: 120px;
+    height: 40px;
+    transform: skew(-20deg);
+    border: solid 1px rgba(29,50,81,1);
+}
+
+#smallScreenButt:hover
+{
+    cursor: pointer;
+    background-color: rgba(29,50,81,1);
+    border-color: rgba(207,230,215,1);
+    color: white;
+}
+
+#smallScreenButt p
+{
+    margin: 0;
+    line-height: 40px;
+    transform: skew(20deg);
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.navHolder
+{
+    width: 100%;
+    height: 40px;
+    background-color: rgba(29,50,81,1);
+    color: white;
+    position: fixed;
+    z-index: 1;
+}
+
+.navHolder .innerNavHolder
+{
+    margin: auto;
+    width: 50%;
+}
+
+.navHolder ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navHolder li
+{
+    float: left;
+    display: inline;
+    border-bottom: 2px solid rgba(207,230,215,1);
+}
+
+.navHolder li:hover
+{
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color: rgba(207,230,215,1);
+    color: rgba(29,50,81,1);
+}
+
+.navHolder a
+{
+    display: block;
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navHolder a:hover
+{
+    color: rgba(29,50,81,1);
+}
+
+.navHolder a:visited
+{
+    display: block;
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+}
+
+.navHolder a:visited:hover
+{
+    color: rgba(29,50,81,1);
+}
+
+.pageHolder
+{
+    border-bottom: solid 20px rgba(207,230,215,1);;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.footerHolder
+{
+    padding: 20px;
+    width: 100%;
+    height: 20px;
+    background-color: rgba(29,50,81,1);
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.footerHolder a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.banner
+{
+    margin-top: -25px;
+    width: 100%;
+    height: 150px;
+    background-color: rgba(29,50,81,1);
+}
+
+.banner h1
+{
+    padding-top: 50px;
+    margin-left: 125px;
+    color: rgba(207,230,215,1);
+    font-family: "Times New Roman", Times, Serif;
+    font-size: 35px;
+}
+
+.banner h2
+{
+    margin-left: 125px;
+    margin-top: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+.banner hr
+{
+    width: 550px;
+    margin-left: 0;
+    color: white;
+    margin-top: -25px;
+}
+
+.imageFrame
+{
+    float: right;
+    width: 170px;
+    height: 240px;
+    background-color: rgba(29,50,81,1);
+    margin-top: -100px;
+    margin-right: 40px;
+    border-bottom: rgba(207,230,215,1) solid 10px;
+}
+
+.imageHolder
+{
+    width: 150px;
+    height: 220px;
+    margin: auto;
+    margin-top: 18.25px;
+}
+
+.infoHolder
+{
+    background-color: rgba(242,242,242,1);
+    height: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgba(29,50,81,1);
+    text-align: center;
+}
+
+.infoHolder a
+{
+    color: rgba(29,50,81,1);
+    text-decoration: none;
+}
+
+.infoHolder a:hover
+{
+    color: rgba(207,230,215,1);
+    text-decoration: none;
+}
+
+.infoHolder a:visited
+{
+    color: rgba(29,50,81,1);
+    text-decoration: none;
+}
+
+.infoHolder a:visited:hover
+{
+    color: rgba(207,230,215,1);
+    text-decoration: none;
+}
+
+.infoTable
+{
+    margin-left: auto;
+    text-align: left;
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+}
+
+#infoTable1Wide #infoTable2Wide #infoTable4Wide
+{
+    display: none;
+}
+
+.sectionHolder
+{
+    width: 100%;
+}
+
+.sectionTitle
+{
+    margin-left: 5%;
+    width: 300px;
+    height: 50px;
+    transform: skew(-20deg);
+    background: rgba(29,50,81,1);
+    border-bottom: solid 10px rgba(207,230,215,1);
+}
+
+.sectionTitle h3
+{
+    margin: 0;
+    color: white;
+    transform: skew(20deg);
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contentHolder
+{
+    padding-left: 7.5%;
+    padding-right: 240px;
+    padding-top: 15px;
+}
+
+.sectionFooter
+{
+    width: 100%;
+    height: 60px;
+}
+
+#aboutQuote
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.workExLink
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(29,50,81,1);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: medium;
+}
+
+.workExLink:visited
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(29,50,81,1);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.workExLink:hover
+{
+    color: rgba(207,230,215,1);
+}
+
+.barBack
+ {
+     height: 20px;
+     background-color: rgba(207,230,215,1);
+ }
+
+.barFront
+{
+    width: 0;
+    height: 20px;
+    background-color: rgba(29,50,81,1);
+}
+
+
+.techProText
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+    text-decoration: underline;
+}
+
+
+#techProCloseButt
+{
+    visibility: hidden;
+    margin-top: -20px;
+    width: 100px;
+    height: 25px;
+    color: rgba(29,50,81,1);
+    font-family: Arial, Helvetica, sans-serif;
+    transform: skew(-20deg);
+    background: rgba(207,230,215,1);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.portContentWrapper
+{
+    overflow-x: scroll;
+    padding-left: 0;
+}
+
+.portContentWrapper::-webkit-scrollbar
+{
+    display: none;
+}
+
+.portItemHolder
+{
+    margin: 10px;
+    width: 500px;
+    border-bottom: solid 10px rgba(207,230,215,1);
+    margin-bottom: 20px;
+}
+
+.portItemHolder:hover
+{
+    cursor: pointer;
+    border-bottom: solid 10px rgba(29,50,81,1);
+}
+
+.portImageWrapper
+{
+    width: 100%;
+    border: solid 1px black;
+    height: 200px;
+    text-align: center;
+}
+
+.portItemTextHolder
+{
+    padding: 5px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(29,50,81,1);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.portItemTextHolder a
+{
+    text-decoration: none;
+}
+
+.portItemTextHolder a:visited
+{
+    text-decoration: none;
+}
+
+.portArrow
+{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(29,50,81,0.5);;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    z-index: 1;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: -190px;
+    position: sticky;
+    font-size: xx-large;
+}
+
+.portArrow:hover
+{
+    background-color: rgba(29,50,81,1);
+    cursor: pointer;
+}
+
+.portArrowLeft
+{
+    float: left;
+}
+
+.portArrowRight
+{
+    float: right;
+}
+
+#portItemDropBox
+{
+    width: 100%;
+    display: none;
+}
+
+.portItemDropInner
+{
+    display: none;
+    width: 100%;
+}
+
+.portItemTitleText
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(29,50,81,1);
+}
+
+.contactEmail
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(29,50,81,1);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contactEmail:visited
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(29,50,81,1);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contactEmail:hover
+{
+    color: rgba(207,230,215,1);
+}
+
+
+.workExBackBar
+{
+    width: 10px;
+    background-color: rgba(207, 230, 215, 1);
+}
+
+.workExFrontBar
+{
+    width: 10px;
+    background-color: rgba(29,50,81,1);
+}
+
+.workExDateHolder
+ {
+     width: 150px;
+     height: 30px;
+     transform: skew(-20deg);
+     background: rgba(207,230,215,1);
+     text-align: center;
+ }
+
+.workExDateHolder:hover
+{
+    cursor: pointer;
+}
+
+.workExDateHolder h6
+{
+    line-height: 30px;
+    transform: skew(20deg);
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+.workExContHolder
+{
+    width: 100%;
+}
+
+
+.workExText
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+.workExLink
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(29,50,81,1);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.workExLink:visited
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(29,50,81,1);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.workExLink:hover
+{
+    cursor: pointer;
+    color: rgba(207,230,215,1);
+}
+
+.workExDropDown
+{
+    width: 100%;
+    display: none;
+}
+
+.educDateHolder
+{
+    width: 150px;
+    height: 30px;
+    transform: skew(-20deg);
+    background: rgba(207,230,215,1);
+    text-align: center;
+}
+
+.educDateHolder h6
+{
+    line-height: 30px;
+    transform: skew(20deg);
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+#educUniTable
+{
+    width: 100%;
+    display: none;
+    margin-bottom: 10px;
+}
+
+.educUniTableBut
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(29,50,81,1);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.educUniTableBut:visited
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(29,50,81,1);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.educUniTableBut:hover
+{
+    cursor: pointer;
+    color: rgba(207,230,215,1);
+}
+
+#educSchoolTable
+{
+    width: 70%;
+    display: none;
+}
